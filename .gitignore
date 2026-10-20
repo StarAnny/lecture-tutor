@@ -1,0 +1,18 @@
+# Local state and credentials
+.local/
+.env
+.env.*
+!.env.example
+validation/installation-results.json
+
+# Generated release files
+dist/
+lecture-tutor.zip
+
+# Tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+Thumbs.db

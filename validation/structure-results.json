@@ -1,0 +1,36 @@
+{
+  "official_validator": "passed; quick_validate.py executed separately",
+  "local_references": [
+    {
+      "from": "lecture-tutor/SKILL.md",
+      "to": "references/teaching.md"
+    },
+    {
+      "from": "lecture-tutor/SKILL.md",
+      "to": "references/problem-solving.md"
+    },
+    {
+      "from": "lecture-tutor/SKILL.md",
+      "to": "references/review.md"
+    }
+  ],
+  "utf8": "passed",
+  "ui_yaml": "passed",
+  "implicit_invocation": "enabled by default; discovery not tested",
+  "requests": 10,
+  "skill_sha256": {
+    "agents/openai.yaml": "9f8a11619f536296c875dce543563708c239ce674ec88143a27f577011f3d8bd",
+    "references/problem-solving.md": "3a6d306a03ac03ce2807c1fae3c48f322c5ea2d3f891c585c3ffc53eed9d8d7b",
+    "references/review.md": "ccd16b6ab9544ef1541d54599ad48fc8b531ec068f8943943383c57df4ce620e",
+    "references/teaching.md": "63f913f552171bcc74f5bf0758871bbae25918c33a32d9b067a797fbd4142528",
+    "SKILL.md": "7fd4ca315efe807a4394f2ae0cb46137833a9ca8114e64f5198de3d3c6ece9ef"
+  },
+  "release_maintenance": {
+    "date": "2026-10-20",
+    "change": "Normalized text to LF line endings and removed extra blank lines at EOF; teaching instructions unchanged.",
+    "changed_files": [
+      "lecture-tutor/agents/openai.yaml",
+      "lecture-tutor/SKILL.md"
+    ]
+  }
+}

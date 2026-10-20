@@ -1,0 +1,11 @@
+{
+  "tau_seconds": 0.2,
+  "lecture_v_at_tau_volts": 7.056964470628461,
+  "lecture_initial_current_amperes": 0.004,
+  "lecture_cutoff_hz": 0.7957747154594768,
+  "solution_v_at_0_2_seconds_volts": 3.1606027941427883,
+  "nonzero_initial_laplace": "V(s) = U(s)/(1+sRC) + RC*v0/(1+sRC)",
+  "missing_parameter_expression_volts": "5 - 4*exp(-0.1/(R*100e-6)), with R in ohms",
+  "check_work_first_error": "2000*100*10**(-6) is 0.2, not 0.0002",
+  "check_work_additional_error": "homogeneous exponent must be -t/tau for R>0,C>0"
+}

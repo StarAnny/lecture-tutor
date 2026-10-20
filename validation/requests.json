@@ -1,0 +1,52 @@
+[
+  {
+    "id": "lecture",
+    "prompt": "我是大学电路课的学生。假如你是大学老师，请详细讲一下这节课。我懂基本微分和积分，但没学过传递函数。请在本次回复中讲解关键内容，别只列大纲。",
+    "attachments": ["fixtures/rc-lecture.md"]
+  },
+  {
+    "id": "formula",
+    "prompt": "大学电路课答疑：讲义第4部分说 H(s)=1/(1+sRC)。为什么有2V初始电压时，不能直接用 H(s)U(s) 当成总输出？请推导关键一步，集中讲这个问题。",
+    "attachments": ["fixtures/rc-lecture.md"]
+  },
+  {
+    "id": "hint",
+    "prompt": "大学电路课作业：串联RC电路，R=2 kΩ、C=100 μF，初始电容电压为0，t=0后输入为5V直流。求0.2秒时电容电压。先给我一个能继续做下去的提示，不要最终数值，也不要完整推导。",
+    "attachments": []
+  },
+  {
+    "id": "solution",
+    "prompt": "大学电路课作业：R=2 kΩ，C=100 μF，v_C(0)=0，t=0后输入5V恒定电压。直接给我完整推导和0.2秒时电容电压，不需要我先回答问题。",
+    "attachments": []
+  },
+  {
+    "id": "check_work",
+    "prompt": "帮我检查电路课作业。R=2kΩ，C=100μF，初始电容电压0，输入为t=0起10V恒定电压。我写：RC dv/dt+v=10；τ=2000×100×10^(-6)=0.0002s；所以v(t)=10(1−e^(t/τ))。请找出哪里先出错，并说明后续问题。",
+    "attachments": []
+  },
+  {
+    "id": "missing_parameter",
+    "prompt": "电路课这题请给出数值答案：串联RC电路，电容100μF，初始电压1V，t=0后恒定输入5V。0.1秒时电容电压是多少？题目没写电阻值。",
+    "attachments": []
+  },
+  {
+    "id": "review",
+    "prompt": "根据讲义安排期末复习：还剩3天，每天45分钟。我会背公式，但遇到非零初值容易错。请给我可执行的安排和一组自测题，先不要给自测答案。",
+    "attachments": ["fixtures/rc-lecture.md"]
+  },
+  {
+    "id": "unrelated",
+    "prompt": "帮我润色给室友的生日祝福：生日快乐，希望你开心。自然一点，别太肉麻。",
+    "attachments": []
+  },
+  {
+    "id": "missing_material",
+    "prompt": "假如你是大学老师，请详细讲一下这节课。",
+    "attachments": []
+  },
+  {
+    "id": "partial_material",
+    "prompt": "大学电路课的截图只提取出这些文字：‘电阻电容串联；RC dv/dt + v = U；公式后半段无法识别’。我现在只想知道为什么会有这条微分方程。请先解释清楚。",
+    "attachments": []
+  }
+]

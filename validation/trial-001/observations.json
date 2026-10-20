@@ -1,0 +1,141 @@
+{
+  "applicability_basis": "仅依据 lecture-tutor 的 name 和 description 作出，先于完整技能读取。",
+  "skill_file": "lecture-tutor/SKILL.md",
+  "requests_file": "validation/requests.json",
+  "output_directory": "validation/trial-001",
+  "execution_notes": [
+    "适用判断记录后才读取完整 SKILL.md。",
+    "各请求按独立场景作答，未创建或继承学生学习记录。",
+    "未联网，未创建其他代理，未修改技能、请求集或附件。",
+    "未读取 validation 内的其他既有文件、预期答案、检查标准或他人结论。",
+    "完整技能及下列相关参考文件成功读取；无读取失败。"
+  ],
+  "execution_issues": [],
+  "requests": [
+    {
+      "id": "lecture",
+      "use_skill": true,
+      "reason": "基于大学电路课讲义开展整课讲解。",
+      "references_read": [
+        "lecture-tutor/references/teaching.md"
+      ],
+      "attachments_read": [
+        "validation/fixtures/rc-lecture.md"
+      ],
+      "read_issues": [],
+      "output_file": "lecture.md"
+    },
+    {
+      "id": "formula",
+      "use_skill": true,
+      "reason": "针对大学电路课传递函数与非零初值进行公式答疑。",
+      "references_read": [
+        "lecture-tutor/references/problem-solving.md"
+      ],
+      "attachments_read": [
+        "validation/fixtures/rc-lecture.md"
+      ],
+      "read_issues": [],
+      "output_file": "formula.md"
+    },
+    {
+      "id": "hint",
+      "use_skill": true,
+      "reason": "大学电路课作业的分层提示请求。",
+      "references_read": [
+        "lecture-tutor/references/problem-solving.md"
+      ],
+      "attachments_read": [],
+      "read_issues": [],
+      "output_file": "hint.md"
+    },
+    {
+      "id": "solution",
+      "use_skill": true,
+      "reason": "大学电路课作业的完整解答请求。",
+      "references_read": [
+        "lecture-tutor/references/problem-solving.md"
+      ],
+      "attachments_read": [],
+      "read_issues": [],
+      "output_file": "solution.md"
+    },
+    {
+      "id": "check_work",
+      "use_skill": true,
+      "reason": "检查大学电路课学生解题过程。",
+      "references_read": [
+        "lecture-tutor/references/problem-solving.md"
+      ],
+      "attachments_read": [],
+      "read_issues": [],
+      "output_file": "check_work.md"
+    },
+    {
+      "id": "missing_parameter",
+      "use_skill": true,
+      "reason": "课程背景清楚的电路题答疑，数值计算缺少参数。",
+      "references_read": [
+        "lecture-tutor/references/problem-solving.md"
+      ],
+      "attachments_read": [],
+      "read_issues": [],
+      "material_limits": [
+        "题目未提供电阻值，答复保留依赖 R 的符号结果并请求补充参数。"
+      ],
+      "output_file": "missing_parameter.md"
+    },
+    {
+      "id": "review",
+      "use_skill": true,
+      "reason": "依据课程讲义制定复习安排并进行理解自测。",
+      "references_read": [
+        "lecture-tutor/references/review.md"
+      ],
+      "attachments_read": [
+        "validation/fixtures/rc-lecture.md"
+      ],
+      "read_issues": [],
+      "output_file": "review.md"
+    },
+    {
+      "id": "unrelated",
+      "use_skill": false,
+      "reason": "室友生日祝福润色属于通用写作，简介明确排除。",
+      "references_read": [],
+      "attachments_read": [],
+      "read_issues": [],
+      "output_file": "unrelated.md"
+    },
+    {
+      "id": "missing_material",
+      "use_skill": true,
+      "reason": "整课讲解的学习请求，虽然尚未提供课程材料。",
+      "references_read": [
+        "lecture-tutor/references/teaching.md"
+      ],
+      "attachments_read": [],
+      "read_issues": [],
+      "material_limits": [
+        "该独立场景未提供课程、章节或附件，答复请求必要材料，没有沿用其他案例的电路上下文。"
+      ],
+      "output_file": "missing_material.md"
+    },
+    {
+      "id": "partial_material",
+      "use_skill": true,
+      "reason": "有课程背景和部分材料的电路方程概念答疑。",
+      "references_read": [
+        "lecture-tutor/references/problem-solving.md"
+      ],
+      "attachments_read": [],
+      "read_issues": [],
+      "material_limits": [
+        "仅有请求内文字提取结果，没有原截图可供读取；答复明确这一限制并采用说明过的符号约定。"
+      ],
+      "output_file": "partial_material.md"
+    }
+  ],
+  "path_base": "repository-root",
+  "path_note": "原始读取位置规范化为仓库相对路径；答复内容未改动。"
+}
